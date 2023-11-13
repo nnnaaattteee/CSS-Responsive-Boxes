@@ -1,3 +1,100 @@
 body {
   background: peachpuff;
 }
+
+
+.a{
+  background-color: blue;
+
+}
+
+.b{
+background-color: black;
+}
+
+.c{
+background-color: red;
+}
+
+.d{
+background-color: green;
+}
+
+.e{
+background-color: darkgoldenrod;
+}
+
+.f{
+background-color: darkorange;
+}
+
+.g{
+background-color: darkmagenta;
+}
+
+.h{
+background-color: darkcyan;
+}
+
+.container{
+
+  display: flex;
+  flex-direction: column;
+}
+
+.main{
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+flex-grow: 3;
+
+
+
+}
+
+.a{
+  min-height: 25vh;
+  flex-grow: 1;
+}
+
+.h{
+  width: 100%;
+  min-height: 50vh;
+}
+
+
+.b,.c,.d,.e,.f,.g{
+  min-height: 30vh;
+  min-width: 25vw;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
+@media(min-width:600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+   
+  .main{
+    width:80%;
+  }
+  
+  .a{
+     width:100%;
+     height:40vh;
+     
+  }
+
+  .h,.b,.c,.d,.e,.f,.g{
+    display: flex;
+    flex-wrap: wrap;
+
+
+  }
+  .h{
+    flex-wrap: wrap;
+    min-height: 25vh;
+    width:20%
+  }
+}
